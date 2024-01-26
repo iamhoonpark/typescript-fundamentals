@@ -9,7 +9,36 @@
 let firstName :string = 'Jake';
 
 // array
-let nameArr :string[] = ['Jake', 'Sanghoon'];
+let nameArr1 :string[] = ['Jake', 'Sanghoon'];
+let nameArr2 :number[] = [1, 2];
+let nameArr3 :boolean[] = [true, false];
+let nameArr4 :bigint[] = [9007199254740991n];
 
 // object
-let ageObj :{ age :number } = { age : 1 };
+let ageObj1 :{ age :number } = { age : 1 };
+let ageObj2 :{ name :string } = { name : 'Jake Park' };
+
+// Union Type - CamelCase
+type Member = [number, boolean];
+let jake :Member = [123, true];
+
+type Member2 = {
+    name :string,
+    age :number,
+    height :string
+};
+
+let personObj :Member2 = {
+    name : '박상훈',
+    age : 22,
+    height : '180cm'
+};
+
+type Member3 = {
+    [key :string] : string
+}
+
+let personObj2 :Member3 = {
+    name : '박상훈',
+    nickname : '제이크'
+}

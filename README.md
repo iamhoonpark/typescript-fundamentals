@@ -42,7 +42,7 @@ npm install -g typescript
 - 터미널에서 해당 커맨드를 입력 후 터미널을 종료하지 않을 경우 변환 작업이 실시간으로 실행
 
 ```sh
-tsc -w
+tsc -w // typescript -watch
 ```
 
 ```sh
@@ -82,7 +82,7 @@ vue add typescript
 <summary>2. TypeScript 컴파일시 세부설정</summary>
 <div markdown="1">
 
-> 타입스크립트 ts파일들은 js파일로 변환할 때 옵션에 대해 세부설정 가능
+- 타입스크립트 ts파일들은 js파일로 변환할 때 옵션에 대해 세부설정 가능
 ```sh
 {
     "compilerOptions": {
@@ -112,5 +112,12 @@ vue add typescript
     }
 }
 ```
+</div>
+</details>
+
+<details>
+<summary>3. 기본자료형(Primitive Types)</summary>
+<div markdown="1">
+
 </div>
 </details>
